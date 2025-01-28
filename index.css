@@ -296,9 +296,16 @@ footer p:hover {
         margin: 0;
     }
 
+	.mini-images {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+	}
+
 	.mini img {
-		width: 70px;
-        height: 70px;
+		width: 20vw;
+		height: auto;
+		max-width: 70px;
 	}
 
 	footer {
