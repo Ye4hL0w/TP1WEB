@@ -271,15 +271,19 @@ footer p:hover {
     }
 
 	.left1 h1 {
-        display: flex;
-        justify-self: center;
-		font-size: 2em;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2em;
+        width: 100%;
 	}
 
     .left2 h1 {
-        display: flex;
-        justify-self: center;
-		font-size: 2em;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2em;
+        width: 100%;
 	}
 
 	.right1 img {
@@ -366,6 +370,19 @@ footer p:hover {
 
     .liens.active button {
         display: inline-block;
+    }
+
+    .content1, .content2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left1, .left2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 }
 
