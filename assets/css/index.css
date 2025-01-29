@@ -59,7 +59,7 @@ header nav h1 {
     color: #d33bfd;
 }
 
-header nav ul button {
+#acheter {
     padding: 5px 15px;
     font-size: 16px;
     background-color: inherit;
@@ -70,7 +70,7 @@ header nav ul button {
     transition: color 0.5s, background-color 0.5s;
 }
 
-header nav ul button:hover {
+#acheter:hover {
     color: inherit;
     background-color: #d33bfd;
 }
@@ -113,7 +113,6 @@ header nav ul button:hover {
     padding: 15px 20px;
     font-size: 15px;
     border-radius: 10px;
-    border: none;
     outline: none;
     cursor: pointer;
 }
@@ -125,7 +124,6 @@ button {
 .left1 button:hover {
     background-color: inherit;
     color: #d33bfd;
-    border: 1px solid #d33bfd;
 }
 
 .mini-images {
@@ -225,8 +223,7 @@ footer p:hover {
     height: 24px;
     position: relative;
     cursor: pointer;
-    z-index: 1000;
-    margin-left: auto;
+    z-index: 2;
 }
 
 .burger-menu .bar {
@@ -344,11 +341,10 @@ footer p:hover {
     }
 
     .liens {
-        display: none;
-    }
-
-    .liens.active {
         display: flex;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100%);
         position: fixed;
         top: 0;
         right: 0;
@@ -358,7 +354,14 @@ footer p:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 999;
+        transition: all 0.5s ease;
+    }
+    
+    .liens.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+        z-index: 1;
     }
 
     .liens.active li {
@@ -401,4 +404,21 @@ footer p:hover {
     .mini img {
         max-width: 50px;
     }
+}
+
+#connexion {
+    background-color: #d33bfd;
+    color: white;
+    border: 1px solid #d33bfd;
+    transition: background-color 0.5s, color 0.5s;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#connexion:hover {
+    background-color: inherit;
+    color: #d33bfd;
 }

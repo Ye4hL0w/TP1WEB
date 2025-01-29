@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <title>Razer</title>
+    <link rel="stylesheet" href="./assets/css/connexion.css">
+    <title>Razer - Connexion</title>
 </head>
 <body>
 
@@ -29,45 +30,40 @@
             </div>
         </nav>
 
-        <section class="content1">
-            <div class="left1">
-                <h1>Écouter de la musique, c'est vivre sa passion</h1>
-                <p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum odio
-					eos beatae labore possimus. Pariatur ipsa, tempore optio placeat
-					expedita minus cupiditate nulla iure quis error. A vitae quibusdam
-					veniam.
-				</p>
-                <button>Acheter maintenant</button>
-                <div class="mini-images">
-                    <div class="mini"><img src="/assets/images/casque1.png" alt="casque"></div>
-                    <div class="mini"><img src="/assets/images/casque2.png" alt="casque"></div>
-                    <div class="mini"><img src="/assets/images/casque3.png" alt="casque"></div>
+        <section class="content">
+            <div id="connexion-box">
+                <section id="choix">
+                    <button id="btn-log-in">Connexion</button>
+                    <button id="btn-sign-in">Inscription</button>
+                </section>
+                <div id="log-in">
+                    <h1>Se connecter</h1>
+                    <form>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
+                        
+                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                        
+                        <button type="submit">Connexion</button>
+                    </form>
+                </div>
+                
+                <div id="sign-in">
+                    <h1>Créer un compte</h1>
+                    <form>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                        
+                        <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
+                        
+                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                        
+                        <button type="submit">Inscription</button>
+                    </form>
                 </div>
             </div>
-            <div class="right1">
-                <img src="assets/images/headset.png" alt="casque">
-            </div>
         </section>
+            
     </header>
 
-    <section class="content2">
-        <div class="left2">
-            <p class="new">Nouveau produit disponible</p>
-            <h1>Le nouveau casque Razer</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum odio
-                eos beatae labore possimus. Pariatur ipsa, tempore optio placeat
-                expedita minus cupiditate nulla iure quis error. A vitae quibusdam
-                veniam.
-            </p>
-            <button>Voir les spécifications</button>
-        </div>
-        <div class="right1">
-            <img src="assets/images/white-headset.png" alt="casque-blanc">
-        </div>
-
-    </section>
 
     <footer>
         <div class="colonne">
@@ -92,6 +88,7 @@
 
 
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/connexion.js"></script>
 </body>
 </html>
 

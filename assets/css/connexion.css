@@ -1,0 +1,128 @@
+.content {
+    padding: 30px 5%;
+    height: fit-content;
+}
+
+#connexion-box {
+    justify-self: center;
+    margin: 5%;
+    height: 70%;
+    width: 70%;
+    background-color: #33314d;
+    border-radius: 15px;
+}
+
+#choix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#choix button {
+    cursor: pointer;
+    margin-top: 2%;
+    color: #ccc;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    font-size: 2em;
+    outline: inherit;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#choix button:hover {
+    color: #d33bfd;
+}
+
+#choix button.active {
+    color: #d33bfd;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#log-in, #sign-in {
+    color: #ccc;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    padding: 5%;
+}
+
+#log-in form, #sign-in form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#log-in form input, #sign-in form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s;
+    box-shadow: 6px 6px 6px rgba(1, 1, 1, 0.5);
+}
+
+#log-in form input:hover, #sign-in form input:hover {
+    background-color: transparent;
+}
+
+#log-in form input::placeholder, #sign-in form input::placeholder {
+    font-size: 0.8em;
+    color: #999;
+}
+
+#log-in form button, #sign-in form button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #d33bfd;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 6px 6px 6px rgba(1, 1, 1, 0.5);
+}
+
+#log-in form button:hover, #sign-in form button:hover {
+    background-color: #a029d4;
+}
+
+
+#log-in.active, #sign-in.active {
+    display: flex;
+}
+
+@media screen and (max-width: 640px) {
+    .content {
+        height: fit-content;
+    }
+
+    #connexion-box {
+        margin: 10%;
+        height: auto;
+        width: 90%;
+    }
+
+    #choix button {
+        font-size: 1.5em;
+    }
+
+    #log-in, #sign-in {
+        font-size: 1.5em;
+    }
+
+    #log-in form input, #sign-in form input {
+        width: 90%;
+    }
+
+    #log-in form button, #sign-in form button {
+        width: 70%;
+    }
+}
