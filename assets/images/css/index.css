@@ -11,11 +11,6 @@ li {
     color: #ccc;
 }
 
-ul.liens li a#accueil {
-    text-decoration: none;
-    color: inherit;
-}
-
 ul {
     display: flex;
     flex-direction: row;
@@ -34,6 +29,22 @@ p, li {
     unicode-bidi: isolate;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #33314d;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    height: 80px;
+    padding: 30px 5% 0px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
@@ -43,6 +54,7 @@ header {
     background: linear-gradient(#13181d, #20212e, #341b47);
     display: block;
     unicode-bidi: isolate;
+    padding-top: 80px;
 }
 
 header nav {

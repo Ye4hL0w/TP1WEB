@@ -24,4 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.remove('menu-open');
         }
     });
+
+    const nav = document.querySelector('nav');    
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+            nav.style.transform = "translateY(-100%)";
+        } else {
+            nav.style.transform = "translateY(0)";
+        }
+    });
 });
