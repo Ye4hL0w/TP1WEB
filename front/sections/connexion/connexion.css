@@ -1,6 +1,10 @@
 .content {
     padding: 30px 5%;
-    height: fit-content;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33314d;
 }
 
 #log-in h1, #sign-in h1 {
@@ -8,12 +12,12 @@
 }
 
 #connexion-box {
-    justify-self: center;
-    margin: 5%;
-    padding: 30px 5%;
-    width: fit-content;
     background-color: #33314d;
     border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 #choix {
@@ -48,8 +52,9 @@
     display: none;
     align-items: center;
     flex-direction: column;
-    font-size: 2em;
-    padding: 5%;
+    font-size: 1.5em;
+    padding: 20px 0;
+    width: 100%;
 }
 
 #log-in form, #sign-in form {

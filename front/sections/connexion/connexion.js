@@ -1,8 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
+function initConnexion() {
     const btnLogIn = document.getElementById('btn-log-in');
     const btnSignIn = document.getElementById('btn-sign-in');
     const logInSection = document.getElementById('log-in');
     const signInSection = document.getElementById('sign-in');
+
+    if (!btnLogIn || !btnSignIn || !logInSection || !signInSection) {
+        console.error('Éléments de connexion non trouvés');
+        return;
+    }
 
     logInSection.classList.add('active');
     btnLogIn.classList.add('active');
@@ -17,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     btnSignIn.addEventListener('click', () => {
         signInSection.classList.add('active');
         logInSection.classList.remove('active');
+
+
         btnSignIn.classList.add('active');
         btnLogIn.classList.remove('active');
     });
@@ -111,5 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
         passwordSignin.setAttribute("type", type);
         this.classList.toggle("fa-eye-slash");
     });
-});
+}
+
+initConnexion();
 
