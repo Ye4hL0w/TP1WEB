@@ -4,7 +4,7 @@ Ce projet est un TP d'entraînement réalisé dans le cadre du cours de dévelop
 
 ## Description
 
-Le projet consiste en une reproduction du site web de Razer, comprenant :
+Le projet consiste en une reproduction d'un site web e-commerce, comprenant :
 
 - Une page d'accueil présentant les produits phares (casques audio)
 - Une page de connexion/inscription avec gestion des utilisateurs via localStorage
@@ -35,5 +35,3 @@ Le projet consiste en une reproduction du site web de Razer, comprenant :
 - JavaScript (ES6+)
 - Font Awesome pour les icônes
 - Google Fonts (Montserrat)
-
-## Structure du projet
